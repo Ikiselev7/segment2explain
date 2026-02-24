@@ -6,10 +6,10 @@ This PoC runs **both models in PyTorch on Apple Silicon (MPS)**:
 - **MedGemma 1.5 4B IT** (multimodal image-text-to-text) on MPS via Hugging Face Transformers
 
 **User experience**
-1) Upload a medical image.
-2) Ask a question (targeted) or request a description.
-3) MedGemma+MedSAM3 pipeline: intent classification → segmentation → filtering → analysis.
-4) Interactive results: colored segment overlays, clickable chips, cross-linked hover.
+1) Upload a medical image (PNG, JPEG, or DICOM).
+2) Ask a question — e.g. "Where is the nodule?" or "What are the findings?"
+3) Two pipeline modes: **Evidence** (sequential, with iterative refinement) or **Quick** (parallel, faster).
+4) Interactive results: colored segment overlays, concept-linked highlights, bidirectional hover.
 
 > ⚠️ Not a diagnostic device. Research/education/prototyping only.
 
@@ -18,7 +18,7 @@ This PoC runs **both models in PyTorch on Apple Silicon (MPS)**:
 ## 0) Prerequisites
 
 - macOS on Apple Silicon (M4 48GB recommended)
-- Python 3.10+ (3.11 recommended)
+- Python 3.10+
 
 ### Accept MedGemma terms on Hugging Face (required)
 The MedGemma Hugging Face repo is gated: you must be logged in and accept **Health AI Developer Foundations terms of use** before you can download weights.
@@ -82,7 +82,7 @@ Open http://localhost:5173 in your browser.
 ## 3) Notes
 
 - Transformers support for Gemma 3 is available from **transformers 4.50.0+**.
-- Default dtype on MPS is float16 (override with `MODEL_DTYPE=bfloat16|float16|float32`).
+- Default dtype on MPS is **float32** (float16 causes MedGemma to emit pad-only output). Override with `MODEL_DTYPE=bfloat16|float16|float32`.
 - To use a different MedGemma model id:
 ```bash
 export MEDGEMMA_MODEL_ID=google/medgemma-1.5-4b-it
@@ -182,7 +182,7 @@ segment2explain_poc/
 ├── orchestrator.py             # State management (JobState, Step)
 ├── backend/                    # FastAPI backend
 │   ├── main.py                 # FastAPI app, routes, static serving
-│   ├── pipeline.py             # Pipeline logic (run_job generator)
+│   ├── pipeline.py             # Pipeline logic (run_job + run_parallel_job)
 │   ├── ws.py                   # WebSocket adapter (state diffing)
 │   ├── schemas.py              # Pydantic WS message schemas
 │   ├── image_service.py        # Image upload/storage/overlay
@@ -196,7 +196,8 @@ segment2explain_poc/
 │   │   └── types/              # TypeScript types
 │   └── tests/                  # Playwright e2e tests
 ├── models/                     # Model wrappers
-│   └── medgemma_torch.py
+│   ├── medgemma_torch.py       # MedGemma: chat, cache, GradCAM heatmaps
+│   └── attention_prior.py      # Spatial priors from attention/gradients
 ├── tools/                      # Segmentation and measurement tools
 │   ├── medsam3_tool.py
 │   ├── refined_segmentation.py
@@ -241,6 +242,7 @@ See [tests/fixtures/README.md](tests/fixtures/README.md) for dataset integration
 ## 5) Demo script (3 minutes)
 
 1) Upload a chest X-ray image.
-2) Ask: "Where is the nodule?" (targeted pipeline) or "Describe this image" (describe pipeline).
-3) Watch the pipeline execute: step cards update in real-time, segments appear as colored overlays.
-4) Hover segment chips in the answer to highlight corresponding regions on the image.
+2) Select **Quick** mode for fast results or **Evidence** mode for detailed step-by-step analysis.
+3) Ask: "Where is the nodule?" or "What are the findings in this chest X-ray?"
+4) Watch the pipeline execute: step cards update in real-time, segments appear as colored overlays.
+5) Hover concept highlights in the answer to see corresponding regions on the image (and vice versa).
