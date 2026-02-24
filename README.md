@@ -43,12 +43,32 @@ Login to Hugging Face (so gated files can download):
 huggingface-cli login
 ```
 
+### Merge MedSAM3 weights
+
+The merged MedSAM3 model checkpoint (`models/medsam3-merged/`) is not included in the repository due to its size (~3.1 GB). You must generate it locally by merging LoRA weights into the base SAM3 model.
+
+**Requirements:**
+- Hugging Face access to [facebook/sam3](https://huggingface.co/facebook/sam3) (base model, ~3.1 GB download)
+- Hugging Face access to [lal-Joey/MedSAM3_v1](https://huggingface.co/lal-Joey/MedSAM3_v1) (LoRA weights, ~12 MB download)
+- ~10 GB free disk space (base model cache + merged output)
+
+```bash
+uv run python scripts/merge_medsam3_lora.py --output models/medsam3-merged
+```
+
+This downloads the base SAM3 model and MedSAM3 LoRA weights from Hugging Face, merges 455 LoRA pairs (rank=16, alpha=32), and saves the merged checkpoint to `models/medsam3-merged/`.
+
+To verify the merge:
+```bash
+uv run python scripts/merge_medsam3_lora.py --verify models/medsam3-merged
+```
+
 ---
 
 ## 2) Run
 
 ```bash
-# Start FastAPI backend (port 8000)
+# Start FastAPI backend (port 8001)
 uv run python main.py
 
 # In another terminal, start React frontend (port 5173)
