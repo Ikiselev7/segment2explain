@@ -1,0 +1,52 @@
+Case: describe_nodule
+Prompt: What are the findings in this image?
+Status: success
+Time: 64.9s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The heart appears normal in size. There may be mild prominence to pulmonary vasculature bilaterally without overt edema. A small nodule measuring approximately [estimate size based on visual comparison] mm is noted within the posterior aspect of the left lung field near the hilum. No significant pleural effusions or pneumothorax identified. Lung fields otherwise appear clear except possibly some atelectasis at bilateral bases which could represent scarring from prior infection/inflammation. IMPRESSION: Small solitary pulmonary nodule present in the left midlung region requiring further evaluation such as CT scan chest recommended per current guidelines depending risk factors. Possible bibasilar atelectasis versus chronic changes. Mildly prominent central vessels possible but no definite cardiomegaly or frank congestion evident. Follow up suggested pending additional information regarding patient history and risk profile.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+pneumothorax, left lung, nodule, heart, edema, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+left lung, nodule
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] nodule (A)
+    concept: nodule
+    bbox: [1620, 1448, 1810, 1760]
+    area_px: 32303
+
+  [B] left lung (B)
+    concept: left lung
+    bbox: [1209, 1208, 1829, 2088]
+    area_px: 323133
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] nodule
+    aliases: ['A small nodule measuring approximately', 'solitary pulmonary nodule present in']
+    color: #ff0000
+
+  [B] left lung
+    aliases: ['the left midlung region requiring', 'in the left midlung region', 'the left lung field near', 'of the left lung field', 'Lung fields otherwise', 'lung']
+    color: #0080ff
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "left lung", "right lung", "cardiac silhouette", "pulmonary artery", "trachea", "mediastinal tissue", "thoracic cavity", "diaphragm", "heart atrium", "heart ventricle", "heart myocardium", "subclavian artery", "pleural effusion", "opacity", "nodule", "consolidation", "mass", "calcification", "edema", "enlarged lymph nodes", "lymph node"] }

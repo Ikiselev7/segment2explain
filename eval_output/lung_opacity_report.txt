@@ -1,0 +1,52 @@
+Case: lung_opacity
+Prompt: Where is the Lung Opacity?
+Status: success
+Time: 32.7s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: There appears to be increased opacification within both lung fields bilaterally. The abnormality seems more pronounced on the right side compared to the left. Specifically, there is significant hazy infiltration involving the entire right hemithorax extending into the apices as well as involvement along the lateral aspect near the midclavicular line. A similar but less extensive pattern exists in the left lung field predominantly affecting the posterior aspects towards the bases. No obvious pleural effusions are identified based solely on this radiograph. IMPRESSION: Bilateral pulmonary infiltrates/opacities, appearing denser on the right than the left. Further evaluation including comparison with prior images may be warranted depending on patient history and symptoms. Consider CT scan chest for better characterization.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+left lung, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+right lung, left lung
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] right lung (A)
+    concept: right lung
+    bbox: [1293, 671, 2011, 1971]
+    area_px: 484699
+
+  [B] left lung (B)
+    concept: left lung
+    bbox: [264, 1436, 965, 2018]
+    area_px: 129227
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] right lung
+    aliases: ['the entire right hemithorax extending', 'within both lung fields bilaterally', 'on the right side compared', 'lung field predominantly', 'on the right than the', 'lung']
+    color: #ff0000
+
+  [B] left lung
+    aliases: ['within both lung fields bilaterally', 'the left lung field predominantly', 'in the left lung field', 'than the left', 'to the left']
+    color: #0080ff
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "right lung", "opacity", "left lung", "pleural effusion"] }

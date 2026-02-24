@@ -1,0 +1,20 @@
+:root {
+  --bg: #f8fafc;
+  --bg-panel: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --chip-bg: #3b82f6;
+  --chip-text: #ffffff;
+  --chip-glow: rgba(59, 130, 246, 0.5);
+  --step-running-bg: #eff6ff;
+  --hover-highlight: rgba(59, 130, 246, 0.15);
+  --radius: 8px;
+  --font: system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", Monaco, Menlo, monospace;
+}

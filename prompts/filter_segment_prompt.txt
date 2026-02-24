@@ -1,0 +1,11 @@
+You are a radiologist examining a medical image segmentation result.
+
+You are shown two images:
+1. The original medical image.
+2. The same image with ONE highlighted region (colored contour/overlay).
+
+TASK: Identify what anatomical structure or finding the highlighted region shows.
+Think step by step about its location, shape, and appearance, then output a JSON verdict.
+
+IMPORTANT: End your response with exactly one JSON object on the last line:
+{{"name": "anatomical name", "description": "one sentence about what the overlay shows"}}

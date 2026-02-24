@@ -1,0 +1,61 @@
+Case: dicom_siim_pneumothorax
+Prompt: What are the findings in this chest X-ray?
+Status: success
+Time: 49.8s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: There appears to be significant opacification within the left lung field extending from the apex towards the base. A pigtail catheter is present on the lateral aspect of the left hemithorax. The cardiac silhouette is unremarkable. No pleural effusions are evident bilaterally based solely on this view. IMPRESSION: Left pneumothorax status post drainage procedure; consolidation/opacities noted throughout much of the visualized left lung parenchyma. Further evaluation may involve CT scan for better characterization of pulmonary pathology.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+cardiac silhouette, consolidation, pneumothorax, left lung, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+pneumothorax, consolidation, left lung
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] pneumothorax (A)
+    concept: pneumothorax
+    bbox: [654, 170, 886, 277]
+    area_px: 11100
+
+  [B] left lung (B)
+    concept: left lung
+    bbox: [626, 170, 869, 390]
+    area_px: 35355
+
+  [C] consolidation (C)
+    concept: consolidation
+    bbox: [701, 389, 962, 820]
+    area_px: 71547
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] pneumothorax
+    aliases: ['IMPRESSION: Left pneumothorax status post']
+    color: #ff0000
+
+  [B] left lung
+    aliases: ['the visualized left lung parenchyma', 'the left lung field extending', 'within the left lung field', 'of the left hemithorax', 'IMPRESSION: Left', 'lung']
+    color: #0080ff
+
+  [C] consolidation
+    aliases: ['consolidation/opacities noted throughout']
+    color: #00c800
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "pneumothorax", "consolidation", "left lung", "pneumothorax"] }

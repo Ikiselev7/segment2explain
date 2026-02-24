@@ -1,0 +1,11 @@
+Based on your analysis above, select the medical concepts from the vocabulary below that you IDENTIFIED AS PRESENT or OBSERVED in the image.
+
+Rules:
+- Only select concepts representing actual findings, visible structures, or conditions you confirmed in your analysis
+- Do NOT select concepts you described as absent, ruled out, not seen, or denied
+- Do NOT select generic anatomy (like "lung", "rib") unless specifically relevant to a finding
+- Prefer specific terms over generic (e.g. "cardiac silhouette" over "heart" if discussing heart size)
+- Maximum 8 concepts
+
+CXR Vocabulary:
+{cxr_concepts}

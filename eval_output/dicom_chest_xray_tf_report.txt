@@ -1,0 +1,43 @@
+Case: dicom_chest_xray_tf
+Prompt: What are the findings in this chest X-ray?
+Status: success
+Time: 47.3s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The cardiac silhouette appears enlarged. There may be mild pulmonary vascular congestion noted bilaterally. A small nodular opacification measuring approximately [estimate size based on visual comparison to landmarks like ribs/heart] mm is present at the medial aspect of the right lung base near the cardiomediastinal border. No pleural effusions are evident. Lung fields otherwise appear clear without focal consolidation identified within the visualized portions. IMPRESSION: Cardiomegaly potentially associated with mild fluid overload. Small indeterminate nodule located medially along the right lung base. Follow up CT scan recommended for further characterization given its location close to the heart.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+cardiac silhouette, consolidation, right lung, nodule, heart, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+cardiac silhouette
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] cardiac silhouette (A)
+    concept: cardiac silhouette
+    bbox: [638, 387, 939, 809]
+    area_px: 33449
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] cardiac silhouette
+    aliases: ['FINDINGS: The cardiac silhouette appears', 'The cardiac silhouette appears enlarged']
+    color: #ff0000
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "cardiac silhouette", "enlarged lymph nodes", "left lung lower lobe", "right lung lower lobe", "opacity", "pleural effusion", "pulmonary artery", "subclavian artery"] }

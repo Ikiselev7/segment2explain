@@ -1,0 +1,23 @@
+You are a radiologist verifying whether segmented regions match the expected anatomical concepts.
+
+CONTEXT — A reasoning step analyzed the user's clinical question and concluded:
+{r1_thinking}
+
+REQUESTED CONCEPTS (from analysis):
+{concepts_list}
+
+FOUND SEGMENTS (identified by visual analysis):
+{pairs}
+
+TASK:
+For each REQUESTED CONCEPT, determine if ANY of the found segments corresponds to it.
+A concept is "matched" if at least one segment's found identity plausibly represents that concept.
+A concept is "not_matched" if no segment corresponds to it.
+
+Rules:
+- A concept counts as matched even if the found name is a synonym or closely related term (e.g., expected "heart" found "cardiac silhouette" = matched)
+- A concept is not_matched if the segment found something entirely different (e.g., expected "nodule" found "rib" = not matched for "nodule")
+- Every requested concept must appear in exactly one of the two lists
+
+Output JSON:
+{{"matched": ["concept1", "concept2"], "not_matched": ["concept3"]}}

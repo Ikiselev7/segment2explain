@@ -1,0 +1,61 @@
+Case: nodule_mass
+Prompt: Where is the Nodule/Mass?
+Status: success
+Time: 40.0s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: A nodule measuring approximately [estimate size based on visual comparison to surrounding features] mm is present at the posterior aspect of the left lung base near the cardiomediastinal border. The cardiac silhouette appears within normal limits. No significant pleural effusions or pneumothorax are identified bilaterally. Lung fields otherwise appear clear without focal consolidation noted. IMPRESSION: Left basilar pulmonary nodule as described above. Further evaluation such as CT scan may be considered depending on patient risk factors and prior history.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+cardiac silhouette, consolidation, pneumothorax, left lung, nodule, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+left lung, nodule, cardiac silhouette
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] cardiac silhouette (A)
+    concept: cardiac silhouette
+    bbox: [906, 1275, 1580, 1909]
+    area_px: 320216
+
+  [B] left lung (B)
+    concept: left lung
+    bbox: [1231, 1248, 1759, 1962]
+    area_px: 243776
+
+  [C] nodule (C)
+    concept: nodule
+    bbox: [457, 2061, 859, 2470]
+    area_px: 122866
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] cardiac silhouette
+    aliases: ['The cardiac silhouette appears within']
+    color: #ff0000
+
+  [B] left lung
+    aliases: ['IMPRESSION: Left basilar pulmonary', 'the left lung base near', 'of the left lung base', 'Lung fields otherwise', 'lung']
+    color: #0080ff
+
+  [C] nodule
+    aliases: ['FINDINGS: A nodule measuring approximately', 'basilar pulmonary nodule as described']
+    color: #00c800
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "left lung", "nodule", "cardiac silhouette"] }

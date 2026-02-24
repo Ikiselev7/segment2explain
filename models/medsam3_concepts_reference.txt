@@ -1,0 +1,655 @@
+# MedSAM3 Reconstructed Concept Reference
+# Sources: SAT-DS (469), SA-Med2D-20M (181), MedSAM3 paper, 2D-modality additions
+# Total unique concepts: 645
+# Note: MedSAM3's actual 330 concepts are a SUBSET of these
+#   (authors haven't released the official list yet)
+# MedSAM3 constraint: concept phrases are ≤3 words
+#
+# === Concepts ≤3 words (likely MedSAM3 format): 504 ===
+abdominal tissue
+adenoma
+adrenal
+adrenal gland
+adrenal gland left
+adrenal gland right
+adrenocortical carcinoma
+airway
+amygdala
+angular gyrus
+anterior eyeball
+anterior hippocampus
+aorta
+arytenoid
+autochthon
+autochthon left
+autochthon right
+basal cell carcinoma
+basal ganglia
+bladder
+bone
+brachiocephalic trunk
+brachiocephalic vein
+brain
+brain edema
+brain tumor
+brain ventricle
+brainstem
+breast
+breast tumor
+bronchie
+buccal mucosa
+carotid artery
+carotid vessel wall
+caudate lobe
+celiac trunk
+cell
+cerebellum
+cervical esophagus
+cervical vertebrae
+cheek
+choroid
+choroidal neovascularization
+cingulate gyrus
+clavicle
+clavicula
+clavicula left
+clavicula right
+cochlea
+colon
+colon cancer
+colon cancer primaries
+colorectal polyp
+common carotid artery
+cord
+corpus callosum
+corticospinal tract
+costal cartilage
+costal cartilages
+covid lesion
+covid-19 infection
+cricopharyngeal inlet
+deep grey matter
+drusen
+duodenum
+edema
+effusion
+enhancing brain tumor
+enhancing tumor
+enlarged lymph nodes
+esophagus
+eustachian tube bone
+external cerebrospinal fluid
+eye
+eyeball
+face
+fat
+femur
+femur bone
+femur cartilage
+femur left
+femur right
+fetal structure
+frontal lobe
+gallbladder
+ganglion cell layer
+gcipl
+glandular structure
+gluteus maximus
+gluteus maximus left
+gluteus maximus right
+gluteus medius
+gluteus medius left
+gluteus medius right
+gluteus minimus
+gluteus minimus left
+gluteus minimus right
+gonad
+grey matter
+head of femur
+heart
+heart ascending aorta
+heart atrium
+heart atrium left
+heart atrium right
+heart blood pool
+heart myocardium
+heart myocardium left
+heart tissue
+heart ventricle
+heart ventricle left
+heart ventricle right
+hepatic tumor
+hepatic vessels
+hip
+hip left
+hip right
+hippocampus
+humerus
+humerus left
+humerus right
+iliac artery
+iliac artery left
+iliac artery right
+iliac vena
+iliac vena left
+iliac vena right
+iliopsoas
+iliopsoas left
+iliopsoas right
+inferior alveolar nerve
+inferior vena cava
+insula
+internal auditory canal
+internal carotid artery
+internal jugular vein
+intervertebral discs
+intestine
+intracranial hemorrhage
+ischemic stroke lesion
+kidney
+kidney cyst
+kidney left
+kidney right
+kidney tumor
+lacrimal gland
+larynx
+larynx - glottis
+larynx - supraglottic
+larynx glottis
+larynx supraglottis
+lateral ventricle
+left adrenal gland
+left amygdala
+left angular gyrus
+left anterior eyeball
+left atrial appendage
+left autochthon
+left brachiocephalic vein
+left breast
+left carotid artery
+left caudate nucleus
+left cerebellum
+left cheek
+left clavicle
+left clavicula
+left cochlea
+left corticospinal tract
+left cuneus
+left eye
+left eyeball
+left femur
+left fusiform gyrus
+left gluteus maximus
+left gluteus medius
+left gluteus minimus
+left heart atrium
+left heart ventricle
+left hip
+left hippocampus
+left humerus
+left iliac artery
+left iliac vena
+left iliopsoas
+left kidney
+left kidney cyst
+left lacrimal gland
+left lens
+left lingual gyrus
+left lung
+left mandible
+left mastoid process
+left middle ear
+left nucleus accumbens
+left optic nerve
+left optic radiation
+left pallidum
+left parotid gland
+left postcentral gyrus
+left posterior eyeball
+left precentral gyrus
+left putamen
+left rib
+left rib 1
+left rib 10
+left rib 11
+left rib 12
+left rib 2
+left rib 3
+left rib 4
+left rib 5
+left rib 6
+left rib 7
+left rib 8
+left rib 9
+left scapula
+left straight gyrus
+left subcallosal area
+left subclavian artery
+left submandibular gland
+left substantia nigra
+left supramarginal gyrus
+left temporal lobe
+left temporal lobes
+left temporomandibular joint
+left thalamus
+left thyroid
+left tympanic cavity
+left ventricle cavity
+lens
+lesion
+lips
+liver
+liver tumor
+liver vessel
+lumbar vertebra
+lumbar vertebrae
+lung
+lung cancer
+lung effusion
+lung infection
+lung infections
+lung left
+lung left heart
+lung lower lobe
+lung node
+lung nodule
+lung right
+lung right heart
+lung tumor
+lung upper lobe
+lung vessel
+lymph node
+lymph nodule
+lymphocyte
+macular edema
+mandible
+manubrium of sternum
+mastoid process
+matter tracts
+mediastinal tissue
+melanoma
+middle ear
+mitotic figure
+multiple sclerosis lesion
+muscle
+myocardial edema
+myocardial infarction
+myocardial scar
+myocardium
+nasal cavity
+nasopharyngeal lymph node
+nasopharyngeal tumor
+necrosis
+neoplastic polyp
+nevus
+no reflow
+non enhancing tumor
+nuclei
+nucleus
+occipital lobe
+optic chiasm
+optic cup
+optic disc
+optic nerve
+optic radiation
+oral cavity
+pancreas
+pancreas tumor
+pancreatic tumor mass
+parietal lobe
+parotid gland
+peritumoral edema
+pharynx constrictor muscle
+pituitary gland
+polyp
+postcava
+posterior eyeball
+posterior hippocampus
+prostate
+prostate and uterus
+prostate cancer
+prostate peripheral zone
+prostate transition zone
+pulmonary artery
+pulmonary embolism
+pulmonary vein
+rectum
+renal artery
+renal vein
+retinal arteries
+retinal artery
+retinal vein
+retinal veins
+retinal vessel
+rib
+rib 1
+rib 10
+rib 11
+rib 12
+rib 2
+rib 3
+rib 4
+rib 5
+rib 6
+rib 7
+rib 8
+rib 9
+rib cartilage
+rib fracture
+rib left 1
+rib left 10
+rib left 11
+rib left 12
+rib left 2
+rib left 3
+rib left 4
+rib left 5
+rib left 6
+rib left 7
+rib left 8
+rib left 9
+rib right 1
+rib right 10
+rib right 11
+rib right 12
+rib right 2
+rib right 3
+rib right 4
+rib right 5
+rib right 6
+rib right 7
+rib right 8
+rib right 9
+right adrenal gland
+right amygdala
+right angular gyrus
+right anterior eyeball
+right autochthon
+right brachiocephalic vein
+right breast
+right carotid artery
+right caudate nucleus
+right cerebellum
+right cheek
+right clavicle
+right clavicula
+right cochlea
+right corticospinal tract
+right cuneus
+right eye
+right eyeball
+right femur
+right fusiform gyrus
+right gluteus maximus
+right gluteus medius
+right gluteus minimus
+right heart atrium
+right heart ventricle
+right hip
+right hippocampus
+right humerus
+right iliac artery
+right iliac vena
+right iliopsoas
+right inner ear
+right kidney
+right kidney cyst
+right lacrimal gland
+right lens
+right lingual gyrus
+right lung
+right mandible
+right mastoid process
+right middle ear
+right nucleus accumbens
+right optic nerve
+right optic radiation
+right pallidum
+right parotid gland
+right postcentral gyrus
+right posterior eyeball
+right precentral gyrus
+right putamen
+right rib
+right rib 1
+right rib 10
+right rib 11
+right rib 12
+right rib 2
+right rib 3
+right rib 4
+right rib 5
+right rib 6
+right rib 7
+right rib 8
+right rib 9
+right scapula
+right straight gyrus
+right subcallosal area
+right subclavian artery
+right submandibular gland
+right substantia nigra
+right supramarginal gyrus
+right temporal lobe
+right temporomandibular joint
+right thalamus
+right thyroid
+right tympanic cavity
+right ventricle cavity
+rnfl
+sacrum
+scapula
+scapula left
+scapula right
+seborrheic keratosis
+skin
+skin lesion
+skull
+small bowel
+spinal canal
+spinal cord
+spleen
+sternum
+stomach
+stroke
+subclavian artery
+submandibular gland
+superior vena cava
+surgical instrument
+surgical tool
+temporal lobe
+temporal lobes
+temporomandibular joint
+thalamus
+third ventricle
+thoracic cavity
+thoracic vertebrae
+thymus
+thyroid
+thyroid gland
+thyroid nodule
+tibia bone
+tibia cartilage
+trachea
+trachea and bronchie
+tumor
+tumor cell
+tympanic cavity
+urinary bladder
+uterocervix
+uterus
+vertebrae
+vertebrae c1
+vertebrae c2
+vertebrae c3
+vertebrae c4
+vertebrae c5
+vertebrae c6
+vertebrae c7
+vertebrae l1
+vertebrae l2
+vertebrae l3
+vertebrae l4
+vertebrae l5
+vertebrae l6
+vertebrae s1
+vertebrae t1
+vertebrae t10
+vertebrae t11
+vertebrae t12
+vertebrae t13
+vertebrae t2
+vertebrae t3
+vertebrae t4
+vertebrae t5
+vertebrae t6
+vertebrae t7
+vertebrae t8
+vertebrae t9
+vestibular schwannoma
+vestibule semicircular canal
+white matter
+white matter hyperintensities
+
+# === Concepts >3 words (SAT-DS extended, may need shortening): 141 ===
+brainstem excluding substantia nigra
+cervical vertebrae 1 (c1)
+cervical vertebrae 2 (c2)
+cervical vertebrae 3 (c3)
+cervical vertebrae 4 (c4)
+cervical vertebrae 5 (c5)
+cervical vertebrae 6 (c6)
+cervical vertebrae 7 (c7)
+head and neck tumor
+head of femur left
+head of femur right
+head of left femur
+head of right femur
+heart left atrium blood cavity
+heart left ventricle blood cavity
+heart left ventricular myocardium
+heart right atrium blood cavity
+heart right ventricle blood cavity
+intervertebral disc between lumbar vertebrae 1 (l1) and lumbar vertebrae 2 (l2)
+intervertebral disc between lumbar vertebrae 2 (l2) and lumbar vertebrae 3 (l3)
+intervertebral disc between lumbar vertebrae 3 (l3) and lumbar vertebrae 4 (l4)
+intervertebral disc between lumbar vertebrae 4 (l4) and lumbar vertebrae 5 (l5)
+intervertebral disc between lumbar vertebrae 5 (l5) and sacrum
+intervertebral disc between thoracic vertebrae 10 (t10) and thoracic vertebrae 11 (t11)
+intervertebral disc between thoracic vertebrae 11 (t11) and thoracic vertebrae 12 (t12)
+intervertebral disc between thoracic vertebrae 12 (t12) and lumbar vertebrae 1 (l1)
+intervertebral disc between thoracic vertebrae 9 (t9) and thoracic vertebrae 10 (t10)
+left anterior cingulate gyrus
+left anterior orbital gyrus
+left anterior temporal lobe lateral part
+left anterior temporal lobe medial part
+left auricle of heart
+left common carotid artery
+left eustachian tube bone
+left heart atrium scar
+left inferior frontal gyrus
+left insula anterior inferior cortex
+left insula anterior long gyrus
+left insula anterior short gyrus
+left insula middle short gyrus
+left insula posterior long gyrus
+left insula posterior short gyrus
+left internal auditory canal
+left internal carotid artery
+left internal jugular vein
+left lateral inferior segment of liver
+left lateral orbital gyrus
+left lateral remainder occipital lobe
+left lateral superior segment of liver
+left lateral ventricle excluding temporal horn
+left lateral ventricle temporal horn
+left lobe of liver
+left lung lower lobe
+left lung upper lobe
+left medial orbital gyrus
+left medial segment of liver
+left middle and inferior temporal gyrus
+left middle frontal gyrus
+left parahippocampal and ambient gyrus
+left posterior cingulate gyrus
+left posterior orbital gyrus
+left posterior temporal lobe
+left pre-subgenual frontal cortex
+left subgenual frontal cortex
+left superior frontal gyrus
+left superior parietal gyrus
+left superior temporal gyrus anterior part
+left superior temporal gyrus middle part
+left vestibule semicircular canal
+lumbar vertebrae 1 (l1)
+lumbar vertebrae 2 (l2)
+lumbar vertebrae 3 (l3)
+lumbar vertebrae 4 (l4)
+lumbar vertebrae 5 (l5)
+lumbar vertebrae 6 (l6)
+lung left heart esophagus
+lung lower lobe left
+lung lower lobe right
+lung middle lobe right
+lung upper lobe left
+lung upper lobe right
+necrotic brain tumor core
+peripheral zone of prostate
+portal vein and splenic vein
+retinal nerve fiber layer
+right anterior cingulate gyrus
+right anterior inferior segment of liver
+right anterior orbital gyrus
+right anterior superior segment of liver
+right anterior temporal lobe lateral part
+right anterior temporal lobe medial part
+right common carotid artery
+right eustachian tube bone
+right inferior frontal gyrus
+right insula anterior inferior cortex
+right insula anterior long gyrus
+right insula anterior short gyrus
+right insula middle short gyrus
+right insula posterior long gyrus
+right insula posterior short gyrus
+right internal auditory canal
+right internal carotid artery
+right internal jugular vein
+right lateral orbital gyrus
+right lateral remainder occipital lobe
+right lateral ventricle excluding temporal horn
+right lateral ventricle temporal horn
+right lobe of liver
+right lung lower lobe
+right lung middle lobe
+right lung upper lobe
+right medial orbital gyrus
+right middle and inferior temporal gyrus
+right middle frontal gyrus
+right parahippocampal and ambient gyrus
+right posterior cingulate gyrus
+right posterior inferior segment of liver
+right posterior orbital gyrus
+right posterior superior segment of liver
+right posterior temporal lobe
+right pre-subgenual frontal cortex
+right subgenual frontal cortex
+right superior frontal gyrus
+right superior parietal gyrus
+right superior temporal gyrus anterior part
+right superior temporal gyrus middle part
+right vestibule semicircular canal
+sacral vertebrae 1 (s1)
+thoracic vertebrae 1 (t1)
+thoracic vertebrae 10 (t10)
+thoracic vertebrae 11 (t11)
+thoracic vertebrae 12 (t12)
+thoracic vertebrae 2 (t2)
+thoracic vertebrae 3 (t3)
+thoracic vertebrae 4 (t4)
+thoracic vertebrae 5 (t5)
+thoracic vertebrae 6 (t6)
+thoracic vertebrae 7 (t7)
+thoracic vertebrae 8 (t8)
+thoracic vertebrae 9 (t9)
+transition zone of prostate

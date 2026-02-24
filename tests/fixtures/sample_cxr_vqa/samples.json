@@ -1,0 +1,324 @@
+[
+  {
+    "name": "cardiomegaly",
+    "image_id": "9a5094b2563a1ef3ff50dc5c7ff71345",
+    "image_file": "cardiomegaly.png",
+    "image_size": [
+      2080,
+      2336
+    ],
+    "prompt": "Where is the Cardiomegaly?",
+    "expected_answer": "The Cardiomegaly finding refers to an enlargement of the cardiac silhouette, centrally located in the chest <loc_691_1375_1653_1831>.",
+    "gt_finding": "Cardiomegaly",
+    "gt_bbox": [
+      691,
+      1375,
+      1653,
+      1831
+    ],
+    "all_vqa": [
+      {
+        "question": "Where is the Cardiomegaly?",
+        "answer": "The Cardiomegaly finding refers to an enlargement of the cardiac silhouette, centrally located in the chest <loc_691_1375_1653_1831>.",
+        "reason": "Cardiomegaly is a nonspecific finding often indicative of chronic cardiac stress, such as chronic hypertension, valvular disease, or cardiomyopathy.",
+        "type": "Where",
+        "difficulty": "Medium",
+        "gt_finding": "Cardiomegaly",
+        "gt_location": "<loc_691_1375_1653_1831>"
+      },
+      {
+        "question": "Does this X-ray show Cardiomegaly?",
+        "answer": "Yes, the Chest X-ray findings explicitly report the presence of Cardiomegaly <loc_691_1375_1653_1831>.",
+        "reason": "Cardiomegaly indicates enlargement of the heart, often reflecting chronic conditions like hypertension, valvular disease, or congestive heart failure, the latter of which is often associated with concurrent pleural effusion.",
+        "type": "Is_there",
+        "difficulty": "Easy",
+        "gt_finding": "Cardiomegaly",
+        "gt_location": "<loc_691_1375_1653_1831>"
+      },
+      {
+        "question": "How many findings are there?",
+        "answer": "There are three distinct findings listed: Cardiomegaly, Pleural effusion, and Pleural thickening <loc_691_1375_1653_1831>.",
+        "reason": "The co-occurrence of these findings, especially cardiomegaly and pleural changes, strongly suggests volume overload, often secondary to congestive heart failure or severe systemic disease.",
+        "type": "How_many",
+        "difficulty": "Medium",
+        "gt_finding": "Cardiomegaly",
+        "gt_location": "<loc_691_1375_1653_1831>"
+      }
+    ]
+  },
+  {
+    "name": "lung_opacity",
+    "image_id": "c394eadea89e5795c8037280492d116d",
+    "image_file": "lung_opacity.png",
+    "image_size": [
+      2304,
+      2880
+    ],
+    "prompt": "Where is the Lung Opacity?",
+    "expected_answer": "The lung opacity is located in the left lower lung zone <loc_0_839_274_2168>.",
+    "gt_finding": "Lung Opacity",
+    "gt_bbox": [
+      0,
+      839,
+      274,
+      2168
+    ],
+    "all_vqa": [
+      {
+        "question": "Where is the Lung Opacity?",
+        "answer": "The lung opacity is located in the left lower lung zone <loc_0_839_274_2168>.",
+        "reason": "This area of increased density most commonly represents consolidation due to pneumonia or underlying atelectasis.",
+        "type": "Where",
+        "difficulty": "Medium",
+        "gt_finding": "Lung Opacity",
+        "gt_location": "<loc_0_839_274_2168>"
+      },
+      {
+        "question": "Which side shows the abnormality?",
+        "answer": "The abnormality is located within the right hemithorax, encompassing the middle and lower lung zones <loc_0_839_274_2168>.",
+        "reason": "The combination of lung opacity (suggesting consolidation or collapse) and pneumothorax indicates severe right-sided pleuropulmonary pathology.",
+        "type": "Which",
+        "difficulty": "Medium",
+        "gt_finding": "Lung Opacity",
+        "gt_location": "<loc_0_839_274_2168>"
+      },
+      {
+        "question": "How many findings are there?",
+        "answer": "There are three distinct radiological findings reported in this region <loc_0_839_274_2168>, specifically Lung Opacity, Pneumothorax, and an Other lesion.",
+        "reason": "This combination indicates a severe pulmonary issue requiring urgent intervention, as a pneumothorax combined with parenchymal disease suggests acute respiratory distress or complicating factors.",
+        "type": "How_many",
+        "difficulty": "Medium",
+        "gt_finding": "Lung Opacity",
+        "gt_location": "<loc_0_839_274_2168>"
+      },
+      {
+        "question": "Does this X-ray show Lung Opacity?",
+        "answer": "Yes, this X-ray demonstrates Lung Opacity covering a substantial portion of the left hemithorax. <loc_0_839_274_2168>",
+        "reason": "Lung opacity is characterized by increased radiodensity, often representing consolidation, atelectasis, or fluid accumulation within the lung parenchyma or surrounding pleural space.",
+        "type": "Is_there",
+        "difficulty": "Easy",
+        "gt_finding": "Lung Opacity",
+        "gt_location": "<loc_0_839_274_2168>"
+      },
+      {
+        "question": "Is there Lung Opacity?",
+        "answer": "Yes, Lung Opacity is present within the inferior region corresponding to the coordinates. <loc_0_839_274_2168>",
+        "reason": "The presence of lung opacity indicates an area of increased density, often due to consolidation (e.g., pneumonia) or pleural fluid accumulation.",
+        "type": "Yes_No",
+        "difficulty": "Easy",
+        "gt_finding": "Lung Opacity",
+        "gt_location": "<loc_0_839_274_2168>"
+      }
+    ]
+  },
+  {
+    "name": "pneumothorax",
+    "image_id": "6e4391555899c8474c4d32f42b2ba21b",
+    "image_file": "pneumothorax.png",
+    "image_size": [
+      2787,
+      2912
+    ],
+    "prompt": "Where is the Pneumothorax?",
+    "expected_answer": "The pneumothorax is located within the right upper lung field, as defined by the bounding box `<loc_1789_533_2189_948>`. This finding indicates free air separating the lung from the chest wall.",
+    "gt_finding": "Pneumothorax",
+    "gt_bbox": [
+      1789,
+      533,
+      2189,
+      948
+    ],
+    "all_vqa": [
+      {
+        "question": "Is there Pneumothorax?",
+        "answer": "Yes, the Chest X-ray findings confirm the presence of pneumothorax <loc_1789_533_2189_948>.",
+        "reason": "Pneumothorax represents air accumulation in the pleural space, which exerts pressure on the lung, potentially leading to partial or complete lung collapse.",
+        "type": "Yes_No",
+        "difficulty": "Easy",
+        "gt_finding": "Pneumothorax",
+        "gt_location": "<loc_1789_533_2189_948>"
+      },
+      {
+        "question": "How many findings are there?",
+        "answer": "Yes, Pneumothorax <loc_1789_533_2189_948>",
+        "reason": "Visible at specified location.",
+        "type": "How_many",
+        "difficulty": "Easy",
+        "gt_finding": "Pneumothorax",
+        "gt_location": "<loc_1789_533_2189_948>"
+      },
+      {
+        "question": "Which side shows the abnormality?",
+        "answer": "The bounding box <loc_1789_533_2189_948> is positioned over the central mediastinum, identifying the aortic enlargement rather than a lateralized pleural abnormality.",
+        "reason": "The anatomical location of the aorta is central to the chest, falling within the coordinates provided for the mediastinal area.",
+        "type": "Which",
+        "difficulty": "Medium",
+        "gt_finding": "Pneumothorax",
+        "gt_location": "<loc_1789_533_2189_948>"
+      },
+      {
+        "question": "Where is the Pneumothorax?",
+        "answer": "The pneumothorax is located within the right upper lung field, as defined by the bounding box `<loc_1789_533_2189_948>`. This finding indicates free air separating the lung from the chest wall.",
+        "reason": "Pneumothorax reduces vital capacity and requires immediate monitoring and possible intervention because the accumulation of air in the pleural space can lead to life-threatening respiratory and hemodynamic compromise.",
+        "type": "Where",
+        "difficulty": "Medium",
+        "gt_finding": "Pneumothorax",
+        "gt_location": "<loc_1789_533_2189_948>"
+      }
+    ]
+  },
+  {
+    "name": "nodule_mass",
+    "image_id": "26be9cde1a3d1a38f19c6753cc9ed40d",
+    "image_file": "nodule_mass.png",
+    "image_size": [
+      2048,
+      2500
+    ],
+    "prompt": "Where is the Nodule/Mass?",
+    "expected_answer": "The Nodule/Mass is visible in the right lower lung field, near the diaphragm <loc_821_1412_1678_1821>.",
+    "gt_finding": "Nodule/Mass",
+    "gt_bbox": [
+      821,
+      1412,
+      1678,
+      1821
+    ],
+    "all_vqa": [
+      {
+        "question": "Is there Nodule/Mass?",
+        "answer": "A Nodule/Mass is confirmed in the provided chest X-ray findings <loc_821_1412_1678_1821>.",
+        "reason": "The presence of a nodule or mass is a critical finding that warrants urgent follow-up, typically with dedicated CT imaging, to rule out malignancy such as lung cancer.",
+        "type": "Yes_No",
+        "difficulty": "Easy",
+        "gt_finding": "Nodule/Mass",
+        "gt_location": "<loc_821_1412_1678_1821>"
+      },
+      {
+        "question": "What abnormality is visible?",
+        "answer": "Multiple findings are present, including a nodule/mass and pleural thickening <loc_821_1412_1678_1821>. Significant cardiomegaly is also noted.",
+        "reason": "The presence of a new pulmonary mass combined with pleural thickening is highly concerning for malignancy (e.g., lung cancer or mesothelioma) and requires urgent cross-sectional imaging.",
+        "type": "What",
+        "difficulty": "Medium",
+        "gt_finding": "Nodule/Mass",
+        "gt_location": "<loc_821_1412_1678_1821>"
+      },
+      {
+        "question": "Does this X-ray show Nodule/Mass?",
+        "answer": "Yes, the Chest X-ray findings explicitly include the presence of a Nodule/Mass. This finding is localized within the region defined by <loc_821_1412_1678_1821>.",
+        "reason": "A pulmonary nodule or mass is a clinically significant opacity that requires investigation to differentiate between benign causes (e.g., granuloma) and malignant disease (e.g., primary lung cancer or metastasis).",
+        "type": "Is_there",
+        "difficulty": "Easy",
+        "gt_finding": "Nodule/Mass",
+        "gt_location": "<loc_821_1412_1678_1821>"
+      },
+      {
+        "question": "Where is the Nodule/Mass?",
+        "answer": "The Nodule/Mass is visible in the right lower lung field, near the diaphragm <loc_821_1412_1678_1821>.",
+        "reason": "Further evaluation, such as chest CT, is necessary to characterize the lesion and exclude malignancy, especially given the concurrent pleural thickening.",
+        "type": "Where",
+        "difficulty": "Medium",
+        "gt_finding": "Nodule/Mass",
+        "gt_location": "<loc_821_1412_1678_1821>"
+      }
+    ]
+  },
+  {
+    "name": "calcification",
+    "image_id": "2e285b95faad220e17e6cbfbe514733e",
+    "image_file": "calcification.png",
+    "image_size": [
+      2048,
+      2500
+    ],
+    "prompt": "Where is the Calcification?",
+    "expected_answer": "The Calcification is noted within the specific region defined by the coordinates <loc_969_950_1012_1000>. This is a localized finding that appears dense on the image.",
+    "gt_finding": "Calcification",
+    "gt_bbox": [
+      969,
+      950,
+      1012,
+      1000
+    ],
+    "all_vqa": [
+      {
+        "question": "Where is the Calcification?",
+        "answer": "The Calcification is noted within the specific region defined by the coordinates <loc_969_950_1012_1000>. This is a localized finding that appears dense on the image.",
+        "reason": "Calcification often represents stable, healed inflammatory changes such as old granulomatous disease (e.g., tuberculosis) or prior injury, and is usually benign.",
+        "type": "Where",
+        "difficulty": "Medium",
+        "gt_finding": "Calcification",
+        "gt_location": "<loc_969_950_1012_1000>"
+      },
+      {
+        "question": "What abnormality is visible?",
+        "answer": "Blunting of the right costophrenic angle, consistent with pleural effusion, is visible <loc_969_950_1012_1000>.",
+        "reason": "Pleural effusion is identified by fluid accumulation in the pleural space, which gravitationally settles and obscures the normally sharp costophrenic angles.",
+        "type": "What",
+        "difficulty": "Medium",
+        "gt_finding": "Calcification",
+        "gt_location": "<loc_969_950_1012_1000>"
+      },
+      {
+        "question": "How many findings are there?",
+        "answer": "There are three distinct radiographic findings identified: Calcification, Pleural effusion, and Aortic enlargement <loc_969_950_1012_1000>.",
+        "reason": "The combination of pleural fluid, calcification, and an enlarged aorta suggests mixed chronic pulmonary disease with potential severe cardiovascular involvement or aortic disease requiring follow-up imaging.",
+        "type": "How_many",
+        "difficulty": "Medium",
+        "gt_finding": "Calcification",
+        "gt_location": "<loc_969_950_1012_1000>"
+      },
+      {
+        "question": "Is there Calcification?",
+        "answer": "Yes, Calcification is explicitly noted in the chest X-ray findings <loc_969_950_1012_1000>.",
+        "reason": "Calcification on a chest X-ray usually indicates chronic changes, potentially from healed granulomatous disease or atherosclerotic deposition in vascular walls.",
+        "type": "Yes_No",
+        "difficulty": "Easy",
+        "gt_finding": "Calcification",
+        "gt_location": "<loc_969_950_1012_1000>"
+      },
+      {
+        "question": "Does this X-ray show Calcification?",
+        "answer": "Yes, the reported X-ray findings explicitly include Calcification located at <loc_969_950_1012_1000>.",
+        "reason": "Calcifications represent dense deposition of calcium salts and typically indicate prior inflammatory processes or benign stable lesions.",
+        "type": "Is_there",
+        "difficulty": "Easy",
+        "gt_finding": "Calcification",
+        "gt_location": "<loc_969_950_1012_1000>"
+      }
+    ]
+  },
+  {
+    "name": "describe_cardiomegaly",
+    "image_id": "9a5094b2563a1ef3ff50dc5c7ff71345",
+    "image_file": "cardiomegaly.png",
+    "image_size": [2080, 2336],
+    "prompt": "Is there any abnormalities?",
+    "expected_answer": "General description of findings including cardiomegaly, pleural effusion, and pleural thickening.",
+    "gt_finding": null,
+    "gt_bbox": null,
+    "all_vqa": []
+  },
+  {
+    "name": "describe_lung_opacity",
+    "image_id": "c394eadea89e5795c8037280492d116d",
+    "image_file": "lung_opacity.png",
+    "image_size": [2304, 2880],
+    "prompt": "Describe this chest X-ray",
+    "expected_answer": "General description of findings including lung opacity and pneumothorax.",
+    "gt_finding": null,
+    "gt_bbox": null,
+    "all_vqa": []
+  },
+  {
+    "name": "describe_nodule",
+    "image_id": "26be9cde1a3d1a38f19c6753cc9ed40d",
+    "image_file": "nodule_mass.png",
+    "image_size": [2048, 2500],
+    "prompt": "What are the findings in this image?",
+    "expected_answer": "General description of findings including nodule/mass and pleural thickening.",
+    "gt_finding": null,
+    "gt_bbox": null,
+    "all_vqa": []
+  }
+]

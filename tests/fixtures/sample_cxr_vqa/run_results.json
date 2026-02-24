@@ -1,0 +1,89 @@
+[
+  {
+    "name": "nodule_mass",
+    "prompt": "Where is the Nodule/Mass?",
+    "gt_bbox": [
+      821,
+      1412,
+      1678,
+      1821
+    ],
+    "status": "success",
+    "error": null,
+    "segments": [
+      "A",
+      "B",
+      "C"
+    ],
+    "steps": [],
+    "answer": "FINDINGS:\n*   **Segment A:** Left Lung - There appears to be a small rounded density located within this segment corresponding to the green marked area. It measures approximately 8 mm x 7mm based on visual estimation from the provided image slice. Its exact position seems centered towards the upper part of the visualized portion of the left lung field. Given its appearance, further characterization would typically involve comparison over time or potentially additional advanced imaging if clinica",
+    "time_s": 323.6,
+    "measurements": {
+      "A": {
+        "area_px": 204211,
+        "bbox_px": [
+          1245,
+          1114,
+          1723,
+          1917
+        ],
+        "max_diameter_px": 934.5,
+        "centroid_px": [
+          1443.02,
+          1585.84
+        ]
+      },
+      "B": {
+        "area_px": 101451,
+        "bbox_px": [
+          655,
+          939,
+          952,
+          1667
+        ],
+        "max_diameter_px": 786.25,
+        "centroid_px": [
+          807.75,
+          1361.69
+        ]
+      },
+      "C": {
+        "area_px": 123794,
+        "bbox_px": [
+          1022,
+          720,
+          1277,
+          1459
+        ],
+        "max_diameter_px": 781.76,
+        "centroid_px": [
+          1155.15,
+          1074.98
+        ]
+      }
+    },
+    "debug_keys": [
+      "_segment_data",
+      "_masks",
+      "R1_raw",
+      "R1_concepts_raw",
+      "R1_concepts",
+      "R1_thinking",
+      "segmentation_mode",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "_attention_heatmaps",
+      "SEG_segment_count",
+      "filter_FA",
+      "filter_FB",
+      "filter_FC",
+      "match_M1",
+      "refinement_iterations",
+      "final_matched_concepts",
+      "_concept_links",
+      "classified_count",
+      "R2_raw"
+    ]
+  }
+]

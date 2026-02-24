@@ -1,0 +1,43 @@
+Case: cardiomegaly
+Prompt: Where is the Cardiomegaly?
+Status: success
+Time: 36.2s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The cardiac silhouette appears enlarged compared to the thoracic cage width. There may be mild prominence along both hila bilaterally. No obvious pleural effusions noted on this single view. IMPRESSION: Mild cardiomegaly suggested by increased heart size relative to chest dimensions. Correlation with patient history and other relevant investigations recommended.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+cardiac silhouette, heart
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+cardiac silhouette
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] cardiac silhouette (A)
+    concept: cardiac silhouette
+    bbox: [1546, 1105, 1833, 1894]
+    area_px: 130372
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] cardiac silhouette
+    aliases: ['FINDINGS: The cardiac silhouette appears', 'The cardiac silhouette appears enlarged']
+    color: #ff0000
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "cardiac silhouette", "enlarged lymph nodes", "opacity", "pleural effusion"] }

@@ -1,0 +1,19 @@
+You are validating a medical image segmentation result.
+
+You are given:
+1. The original medical image
+2. An overlay showing the segmented region highlighted in red with a bounding box
+
+The user asked: "{user_prompt}"
+The region being segmented is: "{label}"
+
+Does the highlighted segment correctly capture the "{label}" region?
+
+If YES — the segment is correct:
+Return ONLY: {{"status": "ok"}}
+
+If NO — the segment is wrong or misaligned:
+Return ONLY: {{"status": "adjust", "bbox_pct": [x_min, y_min, x_max, y_max]}}
+where bbox_pct values are PERCENTAGES (0-100) of the image width/height pointing to the correct region.
+
+Return ONLY the JSON, nothing else.

@@ -1,0 +1,43 @@
+Case: calcification
+Prompt: Where is the Calcification?
+Status: success
+Time: 31.2s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The chest X-ray demonstrates significant opacities within the right lung field extending from the mid to apical regions towards the periphery. There appears to be associated volume loss on the right side compared to the left. A small pleural line suggests possible mild blunting at the base along the right lateral aspect. No definite large consolidation is seen elsewhere. Heart size seems normal based on this single view. IMPRESSION: Right pulmonary parenchymal disease/opacifications noted. Mild atelectasis may also contribute to apparent volume change on the affected side. Further evaluation would likely involve additional views like CT scan for better characterization.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+consolidation, right lung, heart, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+right lung
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] right lung (A)
+    concept: right lung
+    bbox: [1058, 1938, 1117, 2056]
+    area_px: 5998
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] right lung
+    aliases: ['IMPRESSION: Right pulmonary parenchymal', 'the right lung field extending', 'along the right lateral aspect', 'within the right lung field', 'on the right side compared', 'lung']
+    color: #ff0000
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{ "concepts": [ "right lung", "opacity", "calcification"] }

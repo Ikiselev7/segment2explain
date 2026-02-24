@@ -1,0 +1,103 @@
+Case: pneumothorax
+Prompt: Where is the Pneumothorax?
+Status: success
+Time: 209.3s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: There appears to be a small pneumothorax on the left side. The pleural line is visible along the lateral chest wall at approximately the level of the nipple line. A pigtail catheter is present within this area. Mild atelectasis may also be noted adjacent to it. Right lung shows diffuse interstitial thickening/fibrosis predominantly involving the apices bilaterally as well as some patchy opacities scattered throughout both lungs particularly in the mid zones. Heart size seems normal. Mediastinal contours appear unremarkable except for calcified aortic arch. IMPRESSION: Small Left Pleural Effusion / Hemopneumothorax status post drainage tube placement. Diffuse bilateral pulmonary fibrosis/interstitial disease more prominent peripherally especially in the bases. No evidence of significant cardiomegaly.
+
+The location where the pneumothorax was observed is **left** sided pleura near the base laterally. It has been drained by a pigtail catheter which can be seen entering from below into the fluid collection. There might be associated mild atelectasis around the affected region. Additionally there seem to be signs suggestive of chronic changes like fibrotic streaks in the periphery of both lungs.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+pleural effusion, pneumothorax, right lung, effusion, heart, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+pneumothorax, pleural effusion, left lung, right lung
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] right lung (A)
+    concept: right lung
+    bbox: [1605, 479, 2353, 2344]
+    area_px: 961929
+
+  [B] pleural effusion (B)
+    concept: pleural effusion
+    bbox: [1941, 1898, 2273, 2326]
+    area_px: 66902
+
+  [C] left lung (C)
+    concept: left lung
+    bbox: [822, 398, 1359, 1253]
+    area_px: 352857
+
+  [D] pneumothorax (D)
+    concept: pneumothorax
+    bbox: [396, 1506, 527, 2508]
+    area_px: 51124
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] right lung
+    aliases: ['throughout both lungs particularly in', 'Right lung shows diffuse', 'of both lungs', 'lung']
+    color: #ff0000
+
+  [B] pleural effusion
+    aliases: ['Small Left Pleural Effusion /', 'The pleural line is', 'effusion']
+    color: #0080ff
+
+  [C] left lung
+    aliases: ['throughout both lungs particularly in', 'IMPRESSION: Small Left Pleural', 'observed is left sided pleura', 'lung shows diffuse', 'on the left side', 'of both lungs']
+    color: #00c800
+
+  [D] pneumothorax
+    aliases: ['Effusion / Hemopneumothorax status post', 'where the pneumothorax was observed', 'a small pneumothorax on the']
+    color: #ffa500
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{
+  "concepts": [
+    "pneumothorax",
+    "pleural effusion",
+    "pulmonary artery",
+    "left lung",
+    "right lung",
+    "aorta",
+    "trachea",
+    "mediastinal tissue",
+    "thoracic cavity",
+    "diaphragm",
+    "sternum",
+    "scapula",
+    "clavicle",
+    "costal cartilage",
+    "spine",
+    "esophagus",
+    "thymus",
+    "thyroid",
+    "subclavian artery",
+    "lung nodule",
+    "opacity",
+    "consolidation",
+    "mass",
+    "nodule",
+    "calcification",
+    "edema",
+    "enlarged lymph nodes",
+    "lymph node"
+  ]
+}

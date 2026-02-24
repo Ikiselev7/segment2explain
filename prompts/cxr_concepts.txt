@@ -1,0 +1,75 @@
+# Chest X-ray segmentation concepts for MedSAM3
+# These are short noun phrases (≤3 words) that MedSAM3 can segment on CXR images.
+# MedGemma should prefer these terms during concept extraction (R1 step).
+
+# --- Anatomy ---
+heart
+cardiac silhouette
+left lung
+right lung
+left lung upper lobe
+left lung lower lobe
+right lung upper lobe
+right lung middle lobe
+right lung lower lobe
+lung
+aorta
+heart ascending aorta
+pulmonary artery
+pulmonary vein
+superior vena cava
+trachea
+mediastinal tissue
+thoracic cavity
+diaphragm
+sternum
+scapula
+left scapula
+right scapula
+clavicle
+left clavicle
+right clavicle
+rib
+left rib
+right rib
+costal cartilage
+thoracic vertebrae
+spine
+spinal cord
+esophagus
+thymus
+thyroid
+left breast
+right breast
+heart atrium
+heart atrium left
+heart atrium right
+heart ventricle
+heart ventricle left
+heart ventricle right
+heart myocardium
+subclavian artery
+left subclavian artery
+right subclavian artery
+
+# --- Findings / Pathology ---
+lung nodule
+lung tumor
+lung cancer
+lung infection
+covid lesion
+covid-19 infection
+pleural effusion
+lung effusion
+effusion
+pneumothorax
+opacity
+consolidation
+mass
+nodule
+calcification
+rib fracture
+edema
+pulmonary embolism
+enlarged lymph nodes
+lymph node

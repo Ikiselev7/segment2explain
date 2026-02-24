@@ -1,0 +1,98 @@
+Case: describe_lung_opacity
+Prompt: Describe this chest X-ray
+Status: success
+Time: 85.0s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The heart appears normal in size. There is significant opacification involving most of the right lung field extending to the apex. A small amount of pleural fluid may be present along the lateral aspect of the right hemithorax at the base. No definite consolidation within the visible portion of the left lung identified; however there appear to be some linear densities noted posteriorly on that side which could represent atelectasis versus scarring. Surgical clips are seen overlying both clavicles bilaterally. IMPRESSION: Right pulmonary edema/consolidation possibly complicated by associated pleural effusion. Possible mild bilateral posterior basilar atelectasis or fibrosis. Correlation with patient history including recent cardiac events would be helpful. Further evaluation such as CT scan might provide more detailed information regarding the extent of pathology particularly concerning potential pneumonia or malignancy given the appearance of the right lung parenchyma. Follow up recommended based upon clinical context.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+pleural effusion, consolidation, right lung, left lung, effusion, heart, edema, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+right lung, pleural effusion, consolidation, edema
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] consolidation (A)
+    concept: consolidation
+    bbox: [1297, 658, 2003, 1967]
+    area_px: 459605
+
+  [B] pleural effusion (B)
+    concept: pleural effusion
+    bbox: [267, 1537, 427, 1978]
+    area_px: 34537
+
+  [C] edema (C)
+    concept: edema
+    bbox: [198, 1160, 347, 2186]
+    area_px: 37642
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] consolidation
+    aliases: ['No definite consolidation within the']
+    color: #ff0000
+
+  [B] pleural effusion
+    aliases: ['by associated pleural effusion', 'amount of pleural fluid may', 'effusion']
+    color: #0080ff
+
+  [C] edema
+    aliases: []
+    color: #00c800
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{
+  "concepts": [
+    "right lung",
+    "pleural effusion",
+    "opacity",
+    "consolidation",
+    "left lung",
+    "aorta",
+    "pulmonary artery",
+    "trachea",
+    "mediastinal tissue",
+    "thoracic cavity",
+    "diaphragm",
+    "sternum",
+    "scapula",
+    "clavicle",
+    "rib",
+    "costal cartilage",
+    "spine",
+    "esophagus",
+    "thymus",
+    "thyroid",
+    "heart atrium",
+    "heart ventricle",
+    "heart myocardium",
+    "subclavian artery",
+    "lung nodule",
+    "lung tumor",
+    "lung cancer",
+    "lung infection",
+    "covid lesion",
+    "covid-19 infection",
+    "pneumothorax",
+    "edema",
+    "enlarged lymph nodes",
+    "lymph node"
+  ]
+}

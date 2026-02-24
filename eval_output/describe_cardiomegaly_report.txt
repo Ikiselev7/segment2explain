@@ -1,0 +1,56 @@
+Case: describe_cardiomegaly
+Prompt: Is there any abnormalities?
+Status: success
+Time: 37.6s
+
+============================================================
+ANSWER:
+============================================================
+FINDINGS: The cardiac silhouette appears mildly enlarged. There may be mild prominence of pulmonary vasculature bilaterally without overt edema. No focal consolidation, pleural effusion, pneumothorax, or significant atelectasis is identified within the visualized lung fields on this single view radiograph. A metallic foreign body/device overlying the mid thorax obscures portions of both lungs centrally. IMPRESSION: Mild cardiomegaly possible; consider comparison to prior studies if available. Metallic device overlies central chest region obscuring visualization. Follow up CT scan could provide further detail regarding potential underlying pathology obscured by artifact.
+
+============================================================
+PRE-SCAN TERMS:
+============================================================
+cardiac silhouette, pleural effusion, consolidation, pneumothorax, effusion, edema, lung
+
+============================================================
+CONCEPTS LIST (sent to MedSAM3):
+============================================================
+cardiac silhouette
+
+============================================================
+SEGMENTS:
+============================================================
+
+  [A] cardiac silhouette (A)
+    concept: cardiac silhouette
+    bbox: [1414, 1112, 1838, 1905]
+    area_px: 162094
+
+
+============================================================
+CONCEPT LINKS (aliases → segment):
+============================================================
+
+  [A] cardiac silhouette
+    aliases: ['FINDINGS: The cardiac silhouette appears', 'The cardiac silhouette appears mildly']
+    color: #ff0000
+
+
+============================================================
+SELECT RAW (MedGemma JSON):
+============================================================
+{
+  "concepts": [
+    "cardiac silhouette",
+    "pulmonary artery",
+    "left lung",
+    "right lung",
+    "mediastinal tissue",
+    "thoracic cavity",
+    "diaphragm",
+    "aorta",
+    "trachea",
+    "pleural effusion"
+  ]
+}

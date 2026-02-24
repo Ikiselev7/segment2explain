@@ -1,0 +1,994 @@
+[
+  {
+    "name": "cardiomegaly",
+    "prompt": "Where is the Cardiomegaly?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The cardiac silhouette appears enlarged compared to the thoracic cage width. There may be mild prominence along both hila bilaterally. No obvious pleural effusions noted on this single view. IMPRESSION: Mild cardiomegaly suggested by increased heart size relative to chest dimensions. Correlation with patient history and other relevant investigations recommended.",
+    "prescan_terms": [
+      "cardiac silhouette",
+      "heart"
+    ],
+    "concepts_list": [
+      "cardiac silhouette"
+    ],
+    "segments": {
+      "A": {
+        "label": "cardiac silhouette (A)",
+        "concept": "cardiac silhouette",
+        "bbox": [
+          1414,
+          1112,
+          1838,
+          1905
+        ],
+        "measurements": {
+          "area_px": 162094,
+          "bbox_px": [
+            1417,
+            1115,
+            1844,
+            1924
+          ],
+          "max_diameter_px": 914.77,
+          "centroid_px": [
+            1665.6,
+            1467.97
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "cardiac silhouette",
+        "segment_id": "A",
+        "aliases": [
+          "FINDINGS: The cardiac silhouette appears",
+          "The cardiac silhouette appears enlarged"
+        ],
+        "color": "#ff0000"
+      }
+    ],
+    "time_s": 34.2,
+    "select_raw": "{ \"concepts\": [ \"cardiac silhouette\", \"enlarged lymph nodes\", \"opacity\", \"pleural effusion\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "lung_opacity",
+    "prompt": "Where is the Lung Opacity?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: There appears to be increased opacification within both lung fields bilaterally. The abnormality seems more pronounced on the right side compared to the left. Specifically, there is significant hazy infiltration involving the entire right hemithorax extending into the apices as well as involvement along the lateral aspect near the midclavicular line. A similar but less extensive pattern exists in the left lung field predominantly affecting the posterior aspects towards the bases. No obvious pleural effusions are identified based solely on this radiograph. IMPRESSION: Bilateral pulmonary infiltrates/opacities, appearing denser on the right than the left. Further evaluation including comparison with prior images may be warranted depending on patient history and symptoms. Consider CT scan chest for better characterization.",
+    "prescan_terms": [
+      "left lung",
+      "lung"
+    ],
+    "concepts_list": [
+      "right lung",
+      "left lung"
+    ],
+    "segments": {
+      "A": {
+        "label": "left lung (A)",
+        "concept": "left lung",
+        "bbox": [
+          1303,
+          670,
+          2004,
+          1963
+        ],
+        "measurements": {
+          "area_px": 464121,
+          "bbox_px": [
+            1257,
+            627,
+            2002,
+            1978
+          ],
+          "max_diameter_px": 1542.8,
+          "centroid_px": [
+            1658.92,
+            1201.12
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "left lung",
+        "segment_id": "A",
+        "aliases": [
+          "within both lung fields bilaterally",
+          "the left lung field predominantly",
+          "in the left lung field",
+          "than the left",
+          "to the left",
+          "lung"
+        ],
+        "color": "#ff0000"
+      }
+    ],
+    "time_s": 31.2,
+    "select_raw": "{ \"concepts\": [ \"right lung\", \"opacity\", \"left lung\", \"pleural effusion\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "pneumothorax",
+    "prompt": "Where is the Pneumothorax?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: There appears to be a small pneumothorax on the left side. The pleural line is visible along the lateral chest wall at approximately the level of the nipple line. A pigtail catheter is present within this area. Mild atelectasis may also be noted adjacent to it. Right lung shows diffuse interstitial thickening/fibrosis predominantly involving the apices bilaterally as well as some patchy opacities scattered throughout both lungs particularly in the mid zones. Heart size seems normal. Mediastinal contours appear unremarkable except for calcified aortic arch. IMPRESSION: Small Left Pleural Effusion / Hemopneumothorax status post drainage tube placement. Diffuse bilateral pulmonary fibrosis/interstitial disease more prominent peripherally especially in the bases. No evidence of significant cardiomegaly.\n\nThe location where the pneumothorax was observed is **left** sided pleura near the base laterally. It has been drained by a pigtail catheter which can be seen entering from below into the fluid collection. There might be associated mild atelectasis around the affected region. Additionally there seem to be signs suggestive of chronic changes like fibrotic streaks in the periphery of both lungs.",
+    "prescan_terms": [
+      "pleural effusion",
+      "pneumothorax",
+      "right lung",
+      "effusion",
+      "heart",
+      "lung"
+    ],
+    "concepts_list": [
+      "pneumothorax",
+      "pleural effusion",
+      "left lung",
+      "right lung"
+    ],
+    "segments": {
+      "A": {
+        "label": "left lung (A)",
+        "concept": "left lung",
+        "bbox": [
+          1587,
+          471,
+          2355,
+          2366
+        ],
+        "measurements": {
+          "area_px": 941842,
+          "bbox_px": [
+            1576,
+            466,
+            2352,
+            2374
+          ],
+          "max_diameter_px": 2059.77,
+          "centroid_px": [
+            2023.25,
+            1313.88
+          ]
+        }
+      },
+      "B": {
+        "label": "pneumothorax (B)",
+        "concept": "pneumothorax",
+        "bbox": [
+          1639,
+          463,
+          2231,
+          722
+        ],
+        "measurements": {
+          "area_px": 49471,
+          "bbox_px": [
+            1628,
+            455,
+            2246,
+            787
+          ],
+          "max_diameter_px": 701.53,
+          "centroid_px": [
+            1921.85,
+            564.22
+          ]
+        }
+      },
+      "C": {
+        "label": "pleural effusion (C)",
+        "concept": "pleural effusion",
+        "bbox": [
+          1948,
+          1782,
+          2355,
+          2379
+        ],
+        "measurements": {
+          "area_px": 140797,
+          "bbox_px": [
+            1946,
+            1806,
+            2331,
+            2371
+          ],
+          "max_diameter_px": 683.7,
+          "centroid_px": [
+            2164.98,
+            2076.41
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "left lung",
+        "segment_id": "A",
+        "aliases": [
+          "throughout both lungs particularly in",
+          "IMPRESSION: Small Left Pleural",
+          "observed is left sided pleura",
+          "Right lung shows diffuse",
+          "on the left side",
+          "of both lungs",
+          "right lung",
+          "lung"
+        ],
+        "color": "#ff0000"
+      },
+      {
+        "concept": "pneumothorax",
+        "segment_id": "B",
+        "aliases": [
+          "Effusion / Hemopneumothorax status post",
+          "where the pneumothorax was observed",
+          "a small pneumothorax on the"
+        ],
+        "color": "#0080ff"
+      },
+      {
+        "concept": "pleural effusion",
+        "segment_id": "C",
+        "aliases": [
+          "Small Left Pleural Effusion /",
+          "The pleural line is",
+          "effusion"
+        ],
+        "color": "#00c800"
+      }
+    ],
+    "time_s": 224.0,
+    "select_raw": "{\n  \"concepts\": [\n    \"pneumothorax\",\n    \"pleural effusion\",\n    \"pulmonary artery\",\n    \"left lung\",\n    \"right lung\",\n    \"aorta\",\n    \"trachea\",\n    \"mediastinal tissue\",\n    \"thoracic cavity\",\n    \"diaphragm\",\n    \"sternum\",\n    \"scapula\",\n    \"clavicle\",\n    \"costal cartilage\",\n    \"spine\",\n    \"esophagus\",\n    \"thymus\",\n    \"thyroid\",\n    \"subclavian artery\",\n    \"lung nodule\",\n    \"opacity\",\n    \"consolidation\",\n    \"mass\",\n    \"nodule\",\n    \"calcification\",\n    \"edema\",\n    \"enlarged lymph nodes\",\n    \"lymph node\"\n  ]\n}",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "nodule_mass",
+    "prompt": "Where is the Nodule/Mass?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: A nodule measuring approximately [estimate size based on visual comparison to surrounding features] mm is present at the posterior aspect of the left lung base near the cardiomediastinal border. The cardiac silhouette appears within normal limits. No significant pleural effusions or pneumothorax are identified bilaterally. Lung fields otherwise appear clear without focal consolidation noted. IMPRESSION: Left basilar pulmonary nodule as described above. Further evaluation such as CT scan may be considered depending on patient risk factors and prior history.",
+    "prescan_terms": [
+      "cardiac silhouette",
+      "consolidation",
+      "pneumothorax",
+      "left lung",
+      "nodule",
+      "lung"
+    ],
+    "concepts_list": [
+      "left lung",
+      "nodule",
+      "cardiac silhouette"
+    ],
+    "segments": {
+      "A": {
+        "label": "nodule (A)",
+        "concept": "nodule",
+        "bbox": [
+          1620,
+          1448,
+          1810,
+          1760
+        ],
+        "measurements": {
+          "area_px": 32303,
+          "bbox_px": [
+            1614,
+            1423,
+            1805,
+            1705
+          ],
+          "max_diameter_px": 340.6,
+          "centroid_px": [
+            1710.95,
+            1568.79
+          ]
+        }
+      },
+      "B": {
+        "label": "left lung (B)",
+        "concept": "left lung",
+        "bbox": [
+          1209,
+          1208,
+          1829,
+          2088
+        ],
+        "measurements": {
+          "area_px": 323133,
+          "bbox_px": [
+            1194,
+            1081,
+            1817,
+            2051
+          ],
+          "max_diameter_px": 1152.84,
+          "centroid_px": [
+            1452.37,
+            1662.49
+          ]
+        }
+      },
+      "C": {
+        "label": "cardiac silhouette (C)",
+        "concept": "cardiac silhouette",
+        "bbox": [
+          1213,
+          357,
+          1506,
+          495
+        ],
+        "measurements": {
+          "area_px": 15218,
+          "bbox_px": [
+            1196,
+            345,
+            1520,
+            450
+          ],
+          "max_diameter_px": 340.59,
+          "centroid_px": [
+            1333.2,
+            393.22
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "nodule",
+        "segment_id": "A",
+        "aliases": [
+          "FINDINGS: A nodule measuring approximately",
+          "basilar pulmonary nodule as described"
+        ],
+        "color": "#ff0000"
+      },
+      {
+        "concept": "left lung",
+        "segment_id": "B",
+        "aliases": [
+          "IMPRESSION: Left basilar pulmonary",
+          "the left lung base near",
+          "Lung fields otherwise",
+          "of the left lung base",
+          "lung"
+        ],
+        "color": "#0080ff"
+      },
+      {
+        "concept": "cardiac silhouette",
+        "segment_id": "C",
+        "aliases": [
+          "The cardiac silhouette appears within"
+        ],
+        "color": "#00c800"
+      }
+    ],
+    "time_s": 40.0,
+    "select_raw": "{ \"concepts\": [ \"left lung\", \"nodule\", \"cardiac silhouette\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "calcification",
+    "prompt": "Where is the Calcification?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The chest X-ray demonstrates significant opacities within the right lung field extending from the mid to apical regions towards the periphery. There appears to be associated volume loss on the right side compared to the left. A small pleural line suggests possible mild blunting at the base along the right lateral aspect. No definite large consolidation is seen elsewhere. Heart size seems normal based on this single view. IMPRESSION: Right pulmonary parenchymal disease/opacifications noted. Mild atelectasis may also contribute to apparent volume change on the affected side. Further evaluation would likely involve additional views like CT scan for better characterization.",
+    "prescan_terms": [
+      "consolidation",
+      "right lung",
+      "heart",
+      "lung"
+    ],
+    "concepts_list": [
+      "right lung"
+    ],
+    "segments": {
+      "A": {
+        "label": "right lung (A)",
+        "concept": "right lung",
+        "bbox": [
+          1058,
+          1937,
+          1118,
+          2050
+        ],
+        "measurements": {
+          "area_px": 5202,
+          "bbox_px": [
+            1057,
+            1932,
+            1115,
+            2049
+          ],
+          "max_diameter_px": 130.59,
+          "centroid_px": [
+            1082.93,
+            1991.23
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "right lung",
+        "segment_id": "A",
+        "aliases": [
+          "IMPRESSION: Right pulmonary parenchymal",
+          "along the right lateral aspect",
+          "the right lung field extending",
+          "within the right lung field",
+          "on the right side compared",
+          "lung"
+        ],
+        "color": "#ff0000"
+      }
+    ],
+    "time_s": 33.6,
+    "select_raw": "{ \"concepts\": [ \"right lung\", \"opacity\", \"calcification\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "describe_cardiomegaly",
+    "prompt": "Is there any abnormalities?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The cardiac silhouette appears mildly enlarged. There may be mild prominence of pulmonary vasculature bilaterally without overt edema. No focal consolidation, pleural effusion, pneumothorax, or significant atelectasis is identified within the visualized lung fields on this single view radiograph. A metallic foreign body/device overlying the mid thorax obscures portions of both lungs centrally. IMPRESSION: Mild cardiomegaly possible; consider comparison to prior studies if available. Metallic device overlies central chest region obscuring visualization. Follow up CT scan could provide further detail regarding potential underlying pathology obscured by artifact.",
+    "prescan_terms": [
+      "cardiac silhouette",
+      "pleural effusion",
+      "consolidation",
+      "pneumothorax",
+      "effusion",
+      "edema",
+      "lung"
+    ],
+    "concepts_list": [
+      "cardiac silhouette"
+    ],
+    "segments": {
+      "A": {
+        "label": "cardiac silhouette (A)",
+        "concept": "cardiac silhouette",
+        "bbox": [
+          1414,
+          1112,
+          1838,
+          1905
+        ],
+        "measurements": {
+          "area_px": 162094,
+          "bbox_px": [
+            1417,
+            1115,
+            1844,
+            1924
+          ],
+          "max_diameter_px": 914.77,
+          "centroid_px": [
+            1665.6,
+            1467.97
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "cardiac silhouette",
+        "segment_id": "A",
+        "aliases": [
+          "FINDINGS: The cardiac silhouette appears",
+          "The cardiac silhouette appears mildly"
+        ],
+        "color": "#ff0000"
+      }
+    ],
+    "time_s": 37.1,
+    "select_raw": "{\n  \"concepts\": [\n    \"cardiac silhouette\",\n    \"pulmonary artery\",\n    \"left lung\",\n    \"right lung\",\n    \"mediastinal tissue\",\n    \"thoracic cavity\",\n    \"diaphragm\",\n    \"aorta\",\n    \"trachea\",\n    \"pleural effusion\"\n  ]\n}",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "describe_lung_opacity",
+    "prompt": "Describe this chest X-ray",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The heart appears normal in size. There is significant opacification involving most of the right lung field extending to the apex. A small amount of pleural fluid may be present along the lateral aspect of the right hemithorax at the base. No definite consolidation within the visible portion of the left lung identified; however there appear to be some linear densities noted posteriorly on that side which could represent atelectasis versus scarring. Surgical clips are seen overlying both clavicles bilaterally. IMPRESSION: Right pulmonary edema/consolidation possibly complicated by associated pleural effusion. Possible mild bilateral posterior basilar atelectasis or fibrosis. Correlation with patient history including recent cardiac events would be helpful. Further evaluation such as CT scan might provide more detailed information regarding the extent of pathology particularly concerning potential pneumonia or malignancy given the appearance of the right lung parenchyma. Follow up recommended based upon clinical context.",
+    "prescan_terms": [
+      "pleural effusion",
+      "consolidation",
+      "right lung",
+      "left lung",
+      "effusion",
+      "heart",
+      "edema",
+      "lung"
+    ],
+    "concepts_list": [
+      "right lung",
+      "pleural effusion",
+      "consolidation",
+      "edema"
+    ],
+    "segments": {
+      "A": {
+        "label": "consolidation (A)",
+        "concept": "consolidation",
+        "bbox": [
+          1297,
+          658,
+          2003,
+          1967
+        ],
+        "measurements": {
+          "area_px": 459605,
+          "bbox_px": [
+            1257,
+            626,
+            2001,
+            1980
+          ],
+          "max_diameter_px": 1544.94,
+          "centroid_px": [
+            1656.7,
+            1196.66
+          ]
+        }
+      },
+      "B": {
+        "label": "pleural effusion (B)",
+        "concept": "pleural effusion",
+        "bbox": [
+          267,
+          1537,
+          427,
+          1978
+        ],
+        "measurements": {
+          "area_px": 34537,
+          "bbox_px": [
+            264,
+            1551,
+            418,
+            1995
+          ],
+          "max_diameter_px": 469.95,
+          "centroid_px": [
+            334.74,
+            1763.82
+          ]
+        }
+      },
+      "C": {
+        "label": "edema (C)",
+        "concept": "edema",
+        "bbox": [
+          198,
+          1160,
+          347,
+          2186
+        ],
+        "measurements": {
+          "area_px": 37642,
+          "bbox_px": [
+            235,
+            1313,
+            355,
+            2164
+          ],
+          "max_diameter_px": 859.42,
+          "centroid_px": [
+            284.96,
+            1778.59
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "consolidation",
+        "segment_id": "A",
+        "aliases": [
+          "No definite consolidation within the"
+        ],
+        "color": "#ff0000"
+      },
+      {
+        "concept": "pleural effusion",
+        "segment_id": "B",
+        "aliases": [
+          "by associated pleural effusion",
+          "amount of pleural fluid may",
+          "effusion"
+        ],
+        "color": "#0080ff"
+      },
+      {
+        "concept": "edema",
+        "segment_id": "C",
+        "aliases": [],
+        "color": "#00c800"
+      }
+    ],
+    "time_s": 84.4,
+    "select_raw": "{\n  \"concepts\": [\n    \"right lung\",\n    \"pleural effusion\",\n    \"opacity\",\n    \"consolidation\",\n    \"left lung\",\n    \"aorta\",\n    \"pulmonary artery\",\n    \"trachea\",\n    \"mediastinal tissue\",\n    \"thoracic cavity\",\n    \"diaphragm\",\n    \"sternum\",\n    \"scapula\",\n    \"clavicle\",\n    \"rib\",\n    \"costal cartilage\",\n    \"spine\",\n    \"esophagus\",\n    \"thymus\",\n    \"thyroid\",\n    \"heart atrium\",\n    \"heart ventricle\",\n    \"heart myocardium\",\n    \"subclavian artery\",\n    \"lung nodule\",\n    \"lung tumor\",\n    \"lung cancer\",\n    \"lung infection\",\n    \"covid lesion\",\n    \"covid-19 infection\",\n    \"pneumothorax\",\n    \"edema\",\n    \"enlarged lymph nodes\",\n    \"lymph node\"\n  ]\n}",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "describe_nodule",
+    "prompt": "What are the findings in this image?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The heart appears normal in size. There may be mild prominence to pulmonary vasculature bilaterally without overt edema. A small nodule measuring approximately [estimate size based on visual comparison] mm is noted within the posterior aspect of the left lung field near the hilum. No significant pleural effusions or pneumothorax identified. Lung fields otherwise appear clear except possibly some atelectasis at bilateral bases which could represent scarring from prior infection/inflammation. IMPRESSION: Small solitary pulmonary nodule present in the left midlung region requiring further evaluation such as CT scan chest recommended per current guidelines depending risk factors. Possible bibasilar atelectasis versus chronic changes. Mildly prominent central vessels possible but no definite cardiomegaly or frank congestion evident. Follow up suggested pending additional information regarding patient history and risk profile.",
+    "prescan_terms": [
+      "pneumothorax",
+      "left lung",
+      "nodule",
+      "heart",
+      "edema",
+      "lung"
+    ],
+    "concepts_list": [
+      "left lung",
+      "nodule"
+    ],
+    "segments": {
+      "A": {
+        "label": "nodule (A)",
+        "concept": "nodule",
+        "bbox": [
+          1620,
+          1448,
+          1810,
+          1760
+        ],
+        "measurements": {
+          "area_px": 32303,
+          "bbox_px": [
+            1614,
+            1423,
+            1805,
+            1705
+          ],
+          "max_diameter_px": 340.6,
+          "centroid_px": [
+            1710.95,
+            1568.79
+          ]
+        }
+      },
+      "B": {
+        "label": "left lung (B)",
+        "concept": "left lung",
+        "bbox": [
+          1209,
+          1208,
+          1829,
+          2088
+        ],
+        "measurements": {
+          "area_px": 323133,
+          "bbox_px": [
+            1194,
+            1081,
+            1817,
+            2051
+          ],
+          "max_diameter_px": 1152.84,
+          "centroid_px": [
+            1452.37,
+            1662.49
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "nodule",
+        "segment_id": "A",
+        "aliases": [
+          "A small nodule measuring approximately",
+          "solitary pulmonary nodule present in"
+        ],
+        "color": "#ff0000"
+      },
+      {
+        "concept": "left lung",
+        "segment_id": "B",
+        "aliases": [
+          "the left midlung region requiring",
+          "in the left midlung region",
+          "the left lung field near",
+          "of the left lung field",
+          "Lung fields otherwise",
+          "lung"
+        ],
+        "color": "#0080ff"
+      }
+    ],
+    "time_s": 72.2,
+    "select_raw": "{ \"concepts\": [ \"left lung\", \"right lung\", \"cardiac silhouette\", \"pulmonary artery\", \"trachea\", \"mediastinal tissue\", \"thoracic cavity\", \"diaphragm\", \"heart atrium\", \"heart ventricle\", \"heart myocardium\", \"subclavian artery\", \"pleural effusion\", \"opacity\", \"nodule\", \"consolidation\", \"mass\", \"calcification\", \"edema\", \"enlarged lymph nodes\", \"lymph node\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "dicom_chest_xray_tf",
+    "prompt": "What are the findings in this chest X-ray?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: The cardiac silhouette appears enlarged. There may be mild pulmonary vascular congestion noted bilaterally. A small nodular opacification measuring approximately [estimate size based on visual comparison to landmarks like ribs/heart] mm is present at the medial aspect of the right lung base near the cardiomediastinal border. No pleural effusions are evident. Lung fields otherwise appear clear without focal consolidation identified within the visualized portions. IMPRESSION: Cardiomegaly potentially associated with mild fluid overload. Small indeterminate nodule located medially along the right lung base. Follow up CT scan recommended for further characterization given its location close to the heart.",
+    "prescan_terms": [
+      "cardiac silhouette",
+      "consolidation",
+      "right lung",
+      "nodule",
+      "heart",
+      "lung"
+    ],
+    "concepts_list": [
+      "cardiac silhouette"
+    ],
+    "segments": {
+      "A": {
+        "label": "cardiac silhouette (A)",
+        "concept": "cardiac silhouette",
+        "bbox": [
+          638,
+          387,
+          939,
+          809
+        ],
+        "measurements": {
+          "area_px": 33449,
+          "bbox_px": [
+            638,
+            426,
+            932,
+            812
+          ],
+          "max_diameter_px": 485.21,
+          "centroid_px": [
+            820.83,
+            616.74
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "cardiac silhouette",
+        "segment_id": "A",
+        "aliases": [
+          "FINDINGS: The cardiac silhouette appears",
+          "The cardiac silhouette appears enlarged"
+        ],
+        "color": "#ff0000"
+      }
+    ],
+    "time_s": 43.1,
+    "select_raw": "{ \"concepts\": [ \"cardiac silhouette\", \"enlarged lymph nodes\", \"left lung lower lobe\", \"right lung lower lobe\", \"opacity\", \"pleural effusion\", \"pulmonary artery\", \"subclavian artery\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  },
+  {
+    "name": "dicom_siim_pneumothorax",
+    "prompt": "What are the findings in this chest X-ray?",
+    "status": "success",
+    "error": null,
+    "answer": "FINDINGS: There appears to be significant opacification within the left lung field extending from the apex towards the base. A pigtail catheter is present on the lateral aspect of the left hemithorax. The cardiac silhouette is unremarkable. No pleural effusions are evident bilaterally based solely on this view. IMPRESSION: Left pneumothorax status post drainage procedure; consolidation/opacities noted throughout much of the visualized left lung parenchyma. Further evaluation may involve CT scan for better characterization of pulmonary pathology.",
+    "prescan_terms": [
+      "cardiac silhouette",
+      "consolidation",
+      "pneumothorax",
+      "left lung",
+      "lung"
+    ],
+    "concepts_list": [
+      "pneumothorax",
+      "consolidation",
+      "left lung"
+    ],
+    "segments": {
+      "A": {
+        "label": "pneumothorax (A)",
+        "concept": "pneumothorax",
+        "bbox": [
+          654,
+          170,
+          886,
+          277
+        ],
+        "measurements": {
+          "area_px": 11100,
+          "bbox_px": [
+            656,
+            167,
+            867,
+            273
+          ],
+          "max_diameter_px": 236.13,
+          "centroid_px": [
+            756.84,
+            212.78
+          ]
+        }
+      },
+      "B": {
+        "label": "left lung (B)",
+        "concept": "left lung",
+        "bbox": [
+          626,
+          170,
+          869,
+          390
+        ],
+        "measurements": {
+          "area_px": 35355,
+          "bbox_px": [
+            622,
+            168,
+            890,
+            422
+          ],
+          "max_diameter_px": 369.24,
+          "centroid_px": [
+            737.84,
+            271.53
+          ]
+        }
+      },
+      "C": {
+        "label": "consolidation (C)",
+        "concept": "consolidation",
+        "bbox": [
+          701,
+          389,
+          962,
+          820
+        ],
+        "measurements": {
+          "area_px": 71547,
+          "bbox_px": [
+            700,
+            393,
+            961,
+            812
+          ],
+          "max_diameter_px": 493.64,
+          "centroid_px": [
+            843.2,
+            603.94
+          ]
+        }
+      }
+    },
+    "concept_links": [
+      {
+        "concept": "pneumothorax",
+        "segment_id": "A",
+        "aliases": [
+          "IMPRESSION: Left pneumothorax status post"
+        ],
+        "color": "#ff0000"
+      },
+      {
+        "concept": "left lung",
+        "segment_id": "B",
+        "aliases": [
+          "the visualized left lung parenchyma",
+          "the left lung field extending",
+          "within the left lung field",
+          "of the left hemithorax",
+          "IMPRESSION: Left",
+          "lung"
+        ],
+        "color": "#0080ff"
+      },
+      {
+        "concept": "consolidation",
+        "segment_id": "C",
+        "aliases": [
+          "consolidation/opacities noted throughout"
+        ],
+        "color": "#00c800"
+      }
+    ],
+    "time_s": 49.8,
+    "select_raw": "{ \"concepts\": [ \"pneumothorax\", \"consolidation\", \"left lung\", \"pneumothorax\"] }",
+    "debug_keys": [
+      "segmentation_mode",
+      "ANSWER_raw",
+      "SELECT_raw",
+      "CONCEPTS_list",
+      "PRIOR_mode",
+      "PRIOR_heatmaps",
+      "PRIOR_boxes",
+      "SEG_segment_count"
+    ]
+  }
+]
